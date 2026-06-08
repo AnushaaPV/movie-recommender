@@ -1,5 +1,3 @@
-# movie-recommender
-Content-based movie recommendation system built with Python and Streamlit
 
 # 🎬 CineMatch — Movie Recommendation System
 
@@ -8,7 +6,7 @@ Content-based movie recommendation system built with Python and Streamlit
 
 ## 🚀 Live Demo
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://anushaapv-movie-recommender-app.streamlit.app)
+ **[Launch the App](https://anushaapv-movie-recommender-app.streamlit.app)**
 
 > 👆 Click the badge to try the live app — no installation needed!
 
