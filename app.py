@@ -23,7 +23,7 @@ SIMILARITY_PKL = os.path.join(BASE, "similarity.pkl")
 try:
     TMDB_API_KEY = st.secrets["TMDB_API_KEY"]
 except Exception:
-    TMDB_API_KEY = "PASTE_YOUR_KEY_HERE"
+    TMDB_API_KEY = "d261bd3fbed3ebd2c0bc38075839b3e5"
 
 # ── AUTO BUILD MODEL IF PKL FILES MISSING ─────────────────
 # This runs automatically on Streamlit Cloud first deployment
@@ -61,7 +61,7 @@ def fetch_info(movie_id):
         "year"       : "N/A"
     }
 
-    if TMDB_API_KEY == "PASTE_YOUR_KEY_HERE" or not TMDB_API_KEY:
+    if TMDB_API_KEY == "d261bd3fbed3ebd2c0bc38075839b3e5" or not TMDB_API_KEY:
         fallback["poster_url"] = "https://via.placeholder.com/300x450?text=Add+API+Key"
         return fallback
 
@@ -124,7 +124,7 @@ st.markdown("""
 st.markdown("---")
 
 # ── API Key Warning ────────────────────────────────────────
-if TMDB_API_KEY == "PASTE_YOUR_KEY_HERE":
+if TMDB_API_KEY == "d261bd3fbed3ebd2c0bc38075839b3e5":
     st.warning(
         "⚠️ TMDB API key not set — posters and ratings won't load. "
         "Get your free key at themoviedb.org → Settings → API"
@@ -182,7 +182,7 @@ if st.button("🎯 Find Similar Movies", type="primary", use_container_width=Tru
 st.markdown("---")
 with st.expander("🔑 Test TMDB API Key"):
     if st.button("▶ Run Test"):
-        if TMDB_API_KEY == "PASTE_YOUR_KEY_HERE":
+        if TMDB_API_KEY == "d261bd3fbed3ebd2c0bc38075839b3e5":
             st.error("❌ API key not set yet.")
         else:
             try:
